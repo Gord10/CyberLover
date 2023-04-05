@@ -99,4 +99,29 @@ public class TimeText : MonoBehaviour
     {
         instance.text.enabled = true;
     }
+
+    public static void StartAbyss()
+    {
+        instance.StartCoroutine(instance.StartAbyssInstance());
+    }
+
+    private IEnumerator StartAbyssInstance()
+    {
+        float timeWhenLoopStarted = Time.timeSinceLevelLoad;
+        float delta = 0.2f;
+        float duration = 7;
+        float decay = 0.95f;
+
+        while (true)
+        {
+            TimeText.IncreaseMinute();
+            delta *= decay;
+            yield return new WaitForSecondsRealtime(delta);
+        }
+    }
+
+    private void OnDestroy()
+    {
+        StopAllCoroutines();
+    }
 }
