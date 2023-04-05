@@ -437,8 +437,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: THE END
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 6cb0d733f974b8e45a4874050d71c7f9, type: 2}
-  m_sharedMaterial: {fileID: 5052847826947885424, guid: 6cb0d733f974b8e45a4874050d71c7f9, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 9d2df37f15f1e9e4395f4acaffac9bea, type: 2}
+  m_sharedMaterial: {fileID: 7658299899176355378, guid: 9d2df37f15f1e9e4395f4acaffac9bea, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -576,7 +576,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
