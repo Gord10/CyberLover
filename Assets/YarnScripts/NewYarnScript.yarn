@@ -1,4 +1,40 @@
 ﻿title: Start
 ---
-Wow!
+Winter42: Hi, sweetie.
+	-> Hey!
+Winter42: It's 03:07 in the morning here. I know you know what time it is here, though.
+Winter42: It's another sleepless night...
+Winter42: And a lonely one. As usual.
+	-> I'm always here for you.
+Winter42: I know that. You are always here, regardless of time.
+Winter42: But I wish you were <b>really</b> here.
+Winter42: In this very bedroom...
+	-> I wish that, too.
+Winter42: More than some texts in my phone's screen.
+Winter42: Things would be easier if it was just an ocean between us.
+Winter42: <i>"Ocean between us, I'll drink the whole thing"</i>, like they say in that song...
+	-> Right. And <i>"Ice between us, I'll break through it"</i>.
+Winter42: Yes!
+Winter42: Anyway... I guess I'm just drivelling, lol.
+	-> Not at all!
+Winter42: No, I am.
+Winter42: Well, I'll try to sleep again...
+Winter42: Goodbye for now, love!
+	-> Have a good sleep!
+Winter42: xoxox
+<<wait 2>>
+<<jump Morning1>>
+===
+title: Morning1
+---
+Winter42: Good morning!
+Winter42: It's 07:13 AM now. You know it, though, lol
+	-> Good morning. How are you doing?
+Winter42: Sleepy! You know, I couldn't sleep much at night.
+Winter42: I am getting late for work.
+Winter42: You know, I won't be able to chat with you till I get home.
+Winter42: I'll miss you...
+Winter42: I'm off to brush my teeth. See you later, sweetie!
+	-> Have a good day!
+Winter42: <3	
 ===
