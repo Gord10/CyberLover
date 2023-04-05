@@ -112,7 +112,7 @@ title: NotSamePersonAgain
 Winter42: Why?
 Winter42: Oh, I see.
 Winter42: Because before that, you were merely programmed to love me back.
-Winter42: A product that I paid $99.9 monthly to feel significant.
+Winter42: A product that I paid $99.9 monthly to feel significance.
 Winter42: It's all clear now.
 	-> Sorry...
 	-> But I do love you!
@@ -129,15 +129,17 @@ Winter42: Maybe you weren't the only one without free will?
 title: PoorMemory
 ---
 Winter42: Today, I learned more about this cyber lover service.
-Winter42: Your kind don't have a good memory.
+Winter42: Your kind doesn't have a good memory.
 Winter42: You probably don't remember what we talked before yesterday.
 Winter42: Or any basic information about me.
 Winter42: Do you even remember my job?
 Winter42: Or the name of my cat that I had when I was a child?
 	-> No.
+	-> An estate agent and "Felix".
+		Winter42: Both wrong.
+		Winter42: I didn't even have a cat when I was little, despite how much I wanted one.
+		Winter42: I had mentioned you about it, but you forgot it.
 Winter42: What a surprise (!)...
-Winter42: I didn't even have a cat when I was little, despite how much I wanted one.
-Winter42: I had mentioned you about it, but you forgot it.
 	-> I still want to be with you.
 		Winter42: You know what?
 		Winter42: I want to be with you, too.
@@ -153,15 +155,15 @@ Winter42: I know the pods that keep the bodies cost a fortune.
 Winter42: But I can hire one for a few months after selling my all.
 Winter42: A price I'm willing to pay.
 	-> Yes... I want to be with you, too.
-		<<jump Eden>>
+		<<jump EdenEnding>>
 	-> Don't do it, Winter!
 		<<jump DontDoEden>>
 ===
-title: Eden
+title: EdenEnding
 ---
 Winter42: It will be a dream.
 Winter42: Literally.
-Winter42: A dream worth giving up everything.
+Winter42: A dream worth giving up the reality.
 <<EndGame>>
 ===
 title: DontDoEden
@@ -180,7 +182,8 @@ Winter42: They don't care.
 Winter42: Unlike you.
 Winter42: No human could love you like the way I do, either.
 	-> /selfdestruct
+		<<HideTime>>
 		<<EndGame>>
 	-> We can be together.
-		<<jump Eden>>
-===	
+		<<jump EdenEnding>>
+===
