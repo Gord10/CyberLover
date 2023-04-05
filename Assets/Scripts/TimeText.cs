@@ -51,14 +51,14 @@ public class TimeText : MonoBehaviour
     }
 
     [YarnCommand("SetTimeInstant")]
-    //targetHour is by 24. We will determine whether the time is AM or PM based on targetHour
     public static void SetTimeInstant(int targetHour, int targetMinute)
     {
-        instance.currentHour = targetHour;
+        instance.currentHour = targetHour; //targetHour is by 24. We will determine whether the time is AM or PM based on targetHour
         instance.currentMinute = targetMinute;
         instance.SetText();
     }
 
+    //currentHour is by 24. We will determine whether the time is AM or PM based on currentHour
     private void SetText()
     {
         bool isAM = currentHour <= 12;
@@ -75,5 +75,16 @@ public class TimeText : MonoBehaviour
 
         str += (isAM) ? " AM" : " PM";
         text.text = str;
+        //print(text.text);
+    }
+
+    [YarnCommand("SetTime")]
+    public static IEnumerator SetTime(int targetHour, int targetMinute)
+    {
+        while(instance.currentHour != targetHour || instance.currentMinute != targetMinute)
+        {
+            IncreaseMinute();
+            yield return new WaitForSeconds(0.01f);
+        }
     }
 }
