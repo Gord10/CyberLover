@@ -1,7 +1,7 @@
 ﻿title: Start
 ---
 <<SetTimeInstant 3 07>>
-Winter42: Hi, sweetie.
+Winter42: Hi, sweetie. <sprite=0>
 	-> Hey!
 Winter42: It's 03:07 in the morning here. I know you know what time it is here, though.
 Winter42: It's another sleepless night...
@@ -27,14 +27,14 @@ Winter42: No, I am.
 Winter42: Well, I'll try to sleep again...
 Winter42: Goodbye for now, love!
 	-> Have a good sleep!
-Winter42: xoxox
+Winter42: <i>*kisses*</i>
 <<jump Morning1>>
 ===
 title: Morning1
 ---
 <<SetTime 7 13>>
 Winter42: Good morning!
-Winter42: It's 07:13 AM now. You know it, though, lol
+Winter42: It's 07:13 AM now. You know it, though, lol <sprite=1>
 	-> Good morning. How are you doing?
 Winter42: Sleepy! You know, I couldn't sleep much at night.
 <<IncreaseMinute>>
@@ -45,7 +45,7 @@ Winter42: I'll miss you...
 Winter42: I'm off to brush my teeth. See you later, sweetie!
 	-> Have a good day!
 <<IncreaseMinute>>
-Winter42: <3
+Winter42: <sprite=2>
 	<<jump Evening1>>
 ===
 title: Evening1
@@ -131,8 +131,11 @@ Winter42: I wanted to be sure ...
 Winter42: ... I was lovable.
 Winter42: The love and lust you had been showing... I know they weren't of a free will.
 Winter42: But now I can ask with confidence: Do you <i>still</i> want me?
-	-> Find a real lover. A human like you, made of flesh and bones. Not ones and zeros.
-		<<jump RealLover>>
+	-> I do.
+		Winter42: I am yours.
+		<<jump ConsciousUpload>>
+	-> Why don't you look for a <i>real</i> lover?
+		<<jump RealLoverJumpToConsciousUpload>>
 	-> Sorry...
 		<<jump Sorry>>
 ===
@@ -194,7 +197,7 @@ Winter42: They did nothing but hurting me.
 Winter42: They don't care.
 Winter42: Unlike you.
 Winter42: No human could love you like the way I do, either.
-	-> /selfdestruct
+	-> /selfdestruct (This will destroy you)
 		<<HideTime>>
 		<<EndGame>>
 	-> We can be together.
@@ -208,4 +211,12 @@ Winter42: I won't cancel the subscription, but I won't see you again either.
 <<StartAbyss>>
 <<wait 7>>
 <<EndGame>>
+===
+title: RealLoverJumpToConsciousUpload
+---
+Winter42: Why would I?
+Winter42: You are perfect!
+Winter42: Physical touch? Well, yes, I need it.
+Winter42: But I do have a solution...
+<<jump ConsciousUpload>>
 ===

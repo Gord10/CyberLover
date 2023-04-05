@@ -107,7 +107,7 @@ public class TimeText : MonoBehaviour
 
     private IEnumerator StartAbyssInstance()
     {
-        float delta = 0.2f;
+        float delta = 0.3f;
         float decay = 0.95f;
 
         while (true)
