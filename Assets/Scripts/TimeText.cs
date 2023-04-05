@@ -2,18 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using Yarn.Unity;
 
 public class TimeText : MonoBehaviour
 {
     private int currentHour = 11; //By 24
     private int currentMinute = 17; //By 60
     private TextMeshProUGUI text;
+    private static TimeText instance;
 
     private void Awake()
     {
         text = GetComponent<TextMeshProUGUI>();
-        SetTimeInstant(11, 17);
-        InvokeRepeating("IncreaseMinute", 0, 0.1f);
+        instance = this;
+        //InvokeRepeating("IncreaseMinute", 0, 0.1f);
     }
 
     // Start is called before the first frame update
@@ -28,10 +30,17 @@ public class TimeText : MonoBehaviour
         
     }
 
-    private void IncreaseMinute()
+    [YarnCommand("IncreaseMinute")]
+    public static void IncreaseMinute()
+    {
+        instance.IncreaseMinuteInstance();
+    }
+
+    public void IncreaseMinuteInstance()
     {
         currentMinute++;
-        if(currentMinute >= 60)
+
+        if (currentMinute >= 60)
         {
             currentMinute %= 60;
             currentHour++;
@@ -41,12 +50,13 @@ public class TimeText : MonoBehaviour
         SetText();
     }
 
+    [YarnCommand("SetTimeInstant")]
     //targetHour is by 24. We will determine whether the time is AM or PM based on targetHour
-    public void SetTimeInstant(int targetHour, int targetMinute)
+    public static void SetTimeInstant(int targetHour, int targetMinute)
     {
-        currentHour = targetHour;
-        currentMinute = targetMinute;
-        SetText();
+        instance.currentHour = targetHour;
+        instance.currentMinute = targetMinute;
+        instance.SetText();
     }
 
     private void SetText()

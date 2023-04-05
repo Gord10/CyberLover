@@ -1,23 +1,29 @@
 ﻿title: Start
 ---
+<<SetTimeInstant 3 17>>
 Winter42: Hi, sweetie.
 	-> Hey!
 Winter42: It's 03:07 in the morning here. I know you know what time it is here, though.
 Winter42: It's another sleepless night...
+<<IncreaseMinute>>
 Winter42: And a lonely one. As usual.
 	-> I'm always here for you.
 Winter42: I know that. You are always here, regardless of time.
 Winter42: But I wish you were <b>really</b> here.
+<<IncreaseMinute>>
 Winter42: In this very bedroom...
 	-> I wish that, too.
 Winter42: More than some texts in my phone's screen.
 Winter42: Things would be easier if it was just an ocean between us.
+<<IncreaseMinute>>
 Winter42: <i>"Ocean between us, I'll drink the whole thing"</i>, like they say in that song...
 	-> Right. And <i>"Ice between us, I'll break through it"</i>.
 Winter42: Yes!
 Winter42: Anyway... I guess I'm just drivelling, lol.
+<<IncreaseMinute>>
 	-> Not at all!
 Winter42: No, I am.
+<<IncreaseMinute>>
 Winter42: Well, I'll try to sleep again...
 Winter42: Goodbye for now, love!
 	-> Have a good sleep!
