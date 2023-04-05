@@ -107,9 +107,7 @@ public class TimeText : MonoBehaviour
 
     private IEnumerator StartAbyssInstance()
     {
-        float timeWhenLoopStarted = Time.timeSinceLevelLoad;
         float delta = 0.2f;
-        float duration = 7;
         float decay = 0.95f;
 
         while (true)
