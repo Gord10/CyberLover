@@ -87,4 +87,16 @@ public class TimeText : MonoBehaviour
             yield return new WaitForSeconds(0.01f);
         }
     }
+
+    [YarnCommand("HideTime")]
+    public static void Hide()
+    {
+        instance.text.enabled = false;
+    }
+
+    [YarnCommand("ShowTime")]
+    public static void Show()
+    {
+        instance.text.enabled = true;
+    }
 }

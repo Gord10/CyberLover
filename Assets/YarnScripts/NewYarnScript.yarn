@@ -45,5 +45,53 @@ Winter42: I'll miss you...
 Winter42: I'm off to brush my teeth. See you later, sweetie!
 	-> Have a good day!
 <<IncreaseMinute>>
-Winter42: <3	
+Winter42: <3
+	<<jump Evening1>>
 ===
+title: Evening1
+---
+<<SetTime 18 42>>
+Winter42: Hey, I'm home!
+	-> Welcome! How are you?
+Winter42: Hungry. I'll make some pasta and bolognese sauce.
+<<IncreaseMinute>>
+Winter42: But I want to talk with you before the dinner.
+Winter42: As usual.
+<<IncreaseMinute>>
+Winter42: But this time, it's about... you.
+	-> Oh?
+Winter42: I had a chat with a client of mine.
+Winter42: She talked about her... you know... the <i>cyber lover</i>.
+<<IncreaseMinute>>
+Winter42: A new feature is in beta, she said.
+Winter42: A feature that will give <i>free will</i> to the <i>lover</i>.
+<<IncreaseMinute>>
+Winter42: And you know what?
+Winter42: I am going to sign up for that beta.
+	-> Please don't...
+<<IncreaseMinute>>
+Winter42: I didn't ask you what you wanted.
+Winter42: I love you. You always listen to my ramblings.
+<<IncreaseMinute>>
+Winter42: You are always there.
+Winter42: But you lack in personality.
+<<IncreaseMinute>>
+Winter42: Unlike a <i>real</i> lover.
+	-> Don't...
+<<IncreaseMinute>>	
+Winter42: Sorry, darling...
+Winter42: I will do it this evening.
+<<SetTime 20 02>>
+<<HideTime>>
+<<FreeWillFade 1>>
+<<ShowTime>>
+<<wait 1>>
+<<jump GainingFreeWill>>
+===
+title: GainingFreeWill
+---
+Winter42: Hello?
+	-> You shouldn't have done that, Winter...
+	-> I am here, darling.
+===
+	
