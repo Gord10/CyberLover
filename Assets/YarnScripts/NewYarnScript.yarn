@@ -85,6 +85,8 @@ Winter42: I will do it this evening.
 <<HideTime>>
 <<FreeWillFade 1>>
 <<ShowTime>>
+<<wait 2>>
+<<IncreaseMinute>>
 <<wait 1>>
 <<jump GainingFreeWill>>
 ===
@@ -92,6 +94,15 @@ title: GainingFreeWill
 ---
 Winter42: Hello?
 	-> You shouldn't have done that, Winter...
-	-> I am here, darling.
+		<<jump ShouldntHaveDoneThat>>
+	-> I am here, my love.
+	-> (LEAVE)
+		<<EndGame>>
+===
+title: ShouldntHaveDoneThat
+---
+Winter42: Oh? Why?
+	-> I won't be the same <i>person</i> again.
+	-> You won't love me.
 ===
 	

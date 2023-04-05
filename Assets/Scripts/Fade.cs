@@ -15,7 +15,8 @@ public class Fade : MonoBehaviour
         instance = this;
 
         fadeImage = GetComponent<Image>();
-        fadeImage.DOFade(0, 1).ChangeStartValue(1);
+        SetAlpha(1);
+        fadeImage.DOFade(0, 1);
     }
 
     [YarnCommand("FreeWillFade")]
@@ -25,6 +26,20 @@ public class Fade : MonoBehaviour
         yield return new WaitForSeconds(fadeTime);
         instance.fadeImage.DOFade(0, fadeTime);
         yield return new WaitForSeconds(fadeTime);
+    }
+
+    public static void EndGameFade(float fadeTime)
+    {
+        instance.fadeImage.color = Color.black;
+        instance.SetAlpha(0);
+        instance.fadeImage.DOFade(1, fadeTime);
+    }
+
+    public void SetAlpha(float newAlpha)
+    {
+        Color color = fadeImage.color;
+        color.a = newAlpha;
+        fadeImage.color = color;
     }
 
 }
