@@ -178,7 +178,7 @@ title: EdenEnding
 Winter42: It will be a dream.
 Winter42: Literally.
 Winter42: A dream worth giving up the reality.
-<<EndGame>>
+<<EndGame EDEN>>
 ===
 title: DontDoEden
 ---
@@ -199,7 +199,7 @@ Winter42: Unlike you.
 Winter42: No human could love you like the way I do, either.
 	-> /selfdestruct (This will destroy you)
 		<<HideTime>>
-		<<EndGame>>
+		<<EndGame SACRIFICE>>
 	-> We can be together.
 		<<jump EdenEnding>>
 ===
@@ -210,7 +210,7 @@ Winter42: So am I.
 Winter42: I won't cancel the subscription, but I won't see you again either.
 <<StartAbyss>>
 <<wait 7>>
-<<EndGame>>
+<<EndGame ABYSS>>
 ===
 title: RealLoverJumpToConsciousUpload
 ---
