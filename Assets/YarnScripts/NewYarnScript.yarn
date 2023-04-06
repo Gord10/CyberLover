@@ -96,9 +96,8 @@ title: GainingFreeWill
 Winter42: Hello?
 	-> You shouldn't have done that, Winter...
 		<<jump ShouldntHaveDoneThat>>
-	-> I am here, my love.
-	-> (DELETE YOURSELF)
-		<<EndGame>>
+	-> I am here, my love. (NOT WRITTEN YET)
+		<<jump GainingFreeWill>>
 ===
 title: ShouldntHaveDoneThat
 ---
