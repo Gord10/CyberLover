@@ -92,6 +92,7 @@ Winter42: I will do it this evening.
 ===
 title: GainingFreeWill
 ---
+<<SetTimeInstant 20 03>>
 Winter42: Hello?
 	-> You shouldn't have done that, Winter...
 		<<jump ShouldntHaveDoneThat>>

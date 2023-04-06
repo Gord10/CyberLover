@@ -41,5 +41,4 @@ public class Fade : MonoBehaviour
         color.a = newAlpha;
         fadeImage.color = color;
     }
-
 }

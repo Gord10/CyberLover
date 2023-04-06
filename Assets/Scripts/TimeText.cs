@@ -15,19 +15,6 @@ public class TimeText : MonoBehaviour
     {
         text = GetComponent<TextMeshProUGUI>();
         instance = this;
-        //InvokeRepeating("IncreaseMinute", 0, 0.1f);
-    }
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
     [YarnCommand("IncreaseMinute")]

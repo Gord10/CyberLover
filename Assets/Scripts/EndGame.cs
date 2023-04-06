@@ -14,6 +14,7 @@ public class EndGame : MonoBehaviour
     {
         endingNameText.text = "Ending:\n" + GameManager.endingName;
         pressAnyKeyToRestartText.SetActive(false);
+        endingNameText.gameObject.SetActive(false);
     }
 
     // Start is called before the first frame update
@@ -21,7 +22,8 @@ public class EndGame : MonoBehaviour
     {
         yield return new WaitForSeconds(timeWhenRestartIsAllowed);
         pressAnyKeyToRestartText.SetActive(true);
-;    }
+        endingNameText.gameObject.SetActive(true);
+;   }
 
     // Update is called once per frame
     void Update()
