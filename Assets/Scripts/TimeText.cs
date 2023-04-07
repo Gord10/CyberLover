@@ -127,4 +127,13 @@ public class TimeText : MonoBehaviour
     {
         StopAllCoroutines();
     }
+
+    public IEnumerator IncreaseMinutesLineerSpeedInfinitely(float delay)
+    {
+        while (true)
+        {
+            TimeText.IncreaseMinute();
+            yield return new WaitForSecondsRealtime(delay);
+        }
+    }
 }

@@ -12,6 +12,10 @@ public class Title : MonoBehaviour
     {
         dialogueRunner = FindObjectOfType<DialogueRunner>();
         StartCoroutine(RunDialogueRunner("Title"));
+
+        /*
+        TimeText timeText = FindObjectOfType<TimeText>();
+        timeText.StartCoroutine(timeText.IncreaseMinutesInfinitely(0.01f));*/
     }
 
     private IEnumerator RunDialogueRunner(string startNode)
