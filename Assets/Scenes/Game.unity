@@ -712,6 +712,14 @@ MonoBehaviour:
       m_Groups: 
       m_Action: Skip
       m_Flags: 0
+    - m_Name: 
+      m_Id: aafdd29f-45f3-4253-8d53-ff3cea194675
+      m_Path: <Touchscreen>/Press
+      m_Interactions: Press
+      m_Processors: 
+      m_Groups: 
+      m_Action: Skip
+      m_Flags: 0
     m_Flags: 0
   enableActionOnStart: 1
 --- !u!4 &862832992
