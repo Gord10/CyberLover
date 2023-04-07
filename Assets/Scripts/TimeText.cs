@@ -68,10 +68,17 @@ public class TimeText : MonoBehaviour
     [YarnCommand("SetTime")]
     public static IEnumerator SetTime(int targetHour, int targetMinute)
     {
+        int counter = 0;
         while(instance.currentHour != targetHour || instance.currentMinute != targetMinute)
         {
             IncreaseMinute();
-            yield return new WaitForSeconds(0.01f);
+            counter++;
+
+            if(counter >= 3)
+            {
+                yield return new WaitForSeconds(0.016666f);
+                counter = 0;
+            }
         }
     }
 
