@@ -7,10 +7,12 @@ using Yarn.Unity;
 public class GameManager : MonoBehaviour
 {
     public static string endingName = "<UNDEFINED>";
+    public const int possibleEndingAmount = 3;
+
+    private const string reachedEndingsPlayerPrefsKey = "reachedEndings";
 
     private static bool hasPlayerEverFinishedGame = false;
     private DialogueRunner dialogueRunner;
-
 
     private void Awake()
     {
@@ -35,6 +37,7 @@ public class GameManager : MonoBehaviour
     public static IEnumerator EndGame(string _endingName)
     {
         endingName = _endingName.ToUpper();
+        AttemptAddEndingToReachedEndingsList(endingName);
         float endGameFadeTime = 2;
         Fade.EndGameFade(endGameFadeTime);
         yield return new WaitForSeconds(endGameFadeTime);
@@ -47,5 +50,32 @@ public class GameManager : MonoBehaviour
     {
         TimeText.StartAbyss();
         //yield return new WaitForSeconds(5);
+    }
+
+    public static void AttemptAddEndingToReachedEndingsList(string _endingName)
+    {
+        string reachedEndings = PlayerPrefs.GetString(reachedEndingsPlayerPrefsKey, "");
+        string[] reachedEndingsArray = reachedEndings.Split('\n');
+
+        int i;
+        for(i = 0; i < reachedEndingsArray.Length; i++)
+        {
+            if(string.Equals(reachedEndingsArray[i], _endingName))
+            {
+                return;
+            }
+        }
+
+        reachedEndings += _endingName + "\n";
+        PlayerPrefs.SetString(reachedEndingsPlayerPrefsKey, reachedEndings);
+        PlayerPrefs.Save();
+        print(reachedEndings);
+    }
+
+    public static int GetReachedEndingAmount()
+    {
+        string reachedEndings = PlayerPrefs.GetString(reachedEndingsPlayerPrefsKey, "");
+        string[] reachedEndingsArray = reachedEndings.Split('\n');
+        return reachedEndingsArray.Length -1;
     }
 }
