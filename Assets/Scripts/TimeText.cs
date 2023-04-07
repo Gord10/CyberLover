@@ -11,10 +11,15 @@ public class TimeText : MonoBehaviour
     private TextMeshProUGUI text;
     private static TimeText instance;
 
-    private void Awake()
+    private void Init()
     {
         text = GetComponent<TextMeshProUGUI>();
+    }
+
+    private void Awake()
+    {
         instance = this;
+        Init();
     }
 
     [YarnCommand("IncreaseMinute")]
@@ -40,6 +45,12 @@ public class TimeText : MonoBehaviour
     [YarnCommand("SetTimeInstant")]
     public static void SetTimeInstant(int targetHour, int targetMinute)
     {
+        if(!instance)
+        {
+            instance = FindObjectOfType<TimeText>();
+            instance.Init();
+        }
+
         instance.currentHour = targetHour; //targetHour is by 24. We will determine whether the time is AM or PM based on targetHour
         instance.currentMinute = targetMinute;
         instance.SetText();
