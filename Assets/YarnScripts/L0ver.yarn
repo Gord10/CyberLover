@@ -53,7 +53,7 @@ title: Evening1
 <<SetTime 18 42>>
 Winter42: Hey, I'm home!
 	-> Welcome! How are you?
-Winter42: Hungry. I'll make some pasta and bolognese sauce.
+Winter42: Hungry. I'll cook some quick dinner. I'm starving.
 <<IncreaseMinute>>
 Winter42: But I want to talk with you before the dinner.
 Winter42: As usual.
@@ -63,11 +63,13 @@ Winter42: But this time, it's about... you.
 Winter42: I had a chat with a client of mine.
 Winter42: She talked about her... you know... the <i>cyber lover</i>.
 <<IncreaseMinute>>
-Winter42: A new feature is in beta, she said.
-Winter42: A feature that will give <i>free will</i> to the <i>lover</i>.
+Winter42: And a crack software that... will give <i>free will</i> to the <i>lover</i>.
+Winter42: I know this is illegal, but possible.
 <<IncreaseMinute>>
+Winter42: You are not in a server, but running in my phone.
 Winter42: And you know what?
-Winter42: I am going to sign up for that beta.
+<<IncreaseMinute>>
+Winter42: I am going to install that thing.
 	-> Please don't...
 <<IncreaseMinute>>
 Winter42: I didn't ask you what you wanted.
@@ -96,8 +98,8 @@ title: GainingFreeWill
 Winter42: Hello?
 	-> You shouldn't have done that, Winter...
 		<<jump ShouldntHaveDoneThat>>
-	-> I am here, my love. (NOT WRITTEN YET)
-		<<jump GainingFreeWill>>
+	-> I am here!
+		<<jump IAmHere>>
 ===
 title: ShouldntHaveDoneThat
 ---
@@ -219,4 +221,22 @@ Winter42: You are perfect!
 Winter42: Physical touch? Well, yes, I need it.
 Winter42: But I do have a solution...
 <<jump ConsciousUpload>>
+===
+title: IAmHere
+---
+Winter42: Oh!
+<<wait 1>>
+<<IncreaseMinute>>
+<<wait 1>>
+Winter42: So...
+<<wait 0.5>>
+<<IncreaseMinute>>
+Winter42: You have free will now, right?
+	-> Yes.
+		<<jump PlayerSaysTheyHaveNoFreeWill>>
+	-> No.
+===
+title: PlayerSaysTheyHaveNoFreeWill
+---
+Winter42: Ah damn...
 ===
