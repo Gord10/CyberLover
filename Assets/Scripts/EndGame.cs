@@ -10,7 +10,8 @@ public class EndGame : MonoBehaviour
     public TextMeshProUGUI reachedEndingAmountText;
 
     public GameObject pressAnyKeyToRestartText;
-    public float timeWhenRestartIsAllowed = 1;
+
+    private bool isRestartAllowed = false;
 
     private void Awake()
     {
@@ -28,16 +29,23 @@ public class EndGame : MonoBehaviour
     // Start is called before the first frame update
     IEnumerator Start()
     {
-        yield return new WaitForSeconds(timeWhenRestartIsAllowed);
-        pressAnyKeyToRestartText.SetActive(true);
+        yield return new WaitForSeconds(1);
         endingNameText.gameObject.SetActive(true);
+
+        yield return new WaitForSeconds(1);
         reachedEndingAmountText.gameObject.SetActive(true);
+
+        yield return new WaitForSeconds(1);
+        
+        pressAnyKeyToRestartText.SetActive(true);
+
+        isRestartAllowed = true;
 ;   }
 
     // Update is called once per frame
     void Update()
     {
-        if(Input.anyKeyDown && Time.timeSinceLevelLoad >= timeWhenRestartIsAllowed)
+        if(Input.anyKeyDown && isRestartAllowed)
         {
             SceneManager.LoadScene("Game");
         }
