@@ -6,10 +6,11 @@ using Yarn.Unity;
 
 public class TimeText : MonoBehaviour
 {
+    public float fastForwardParticleSpeedCoFactor = 30;
     private int currentHour = 11; //By 24
     private int currentMinute = 17; //By 60
     private TextMeshProUGUI text;
-    private ParticleSystem particleSystem;
+    private BackgroundParticleSystem backgroundParticleSystem;
     
     private static TimeText instance;
 
@@ -17,7 +18,7 @@ public class TimeText : MonoBehaviour
     private void Init()
     {
         text = GetComponent<TextMeshProUGUI>();
-        particleSystem = FindObjectOfType<ParticleSystem>();
+        backgroundParticleSystem = FindObjectOfType<BackgroundParticleSystem>();
     }
 
     private void Awake()
@@ -58,6 +59,8 @@ public class TimeText : MonoBehaviour
         instance.currentHour = targetHour; //targetHour is by 24. We will determine whether the time is AM or PM based on targetHour
         instance.currentMinute = targetMinute;
         instance.SetText();
+
+        instance.backgroundParticleSystem.TurnBackToNormalSpeed();
     }
 
     //currentHour is by 24. We will determine whether the time is AM or PM based on currentHour
@@ -84,6 +87,10 @@ public class TimeText : MonoBehaviour
     public static IEnumerator SetTime(int targetHour, int targetMinute)
     {
         int counter = 0;
+        //instance.particleSystem.playbackSpeed = instance.fastForwardParticleSpeedCoFactor;
+
+        instance.backgroundParticleSystem.OnFastForward();
+
         while(instance.currentHour != targetHour || instance.currentMinute != targetMinute)
         {
             IncreaseMinute();
@@ -95,6 +102,8 @@ public class TimeText : MonoBehaviour
                 counter = 0;
             }
         }
+
+        instance.backgroundParticleSystem.TurnBackToNormalSpeed();
     }
 
     [YarnCommand("HideTime")]
@@ -116,6 +125,8 @@ public class TimeText : MonoBehaviour
 
     private IEnumerator StartAbyssInstance()
     {
+        backgroundParticleSystem.MultiplyPlaybackSpeed(6);
+
         float delta = 0.3f;
         float decay = 0.95f;
 
@@ -123,7 +134,8 @@ public class TimeText : MonoBehaviour
         {
             TimeText.IncreaseMinute();
             delta *= decay;
-            particleSystem.playbackSpeed /= decay;
+            backgroundParticleSystem.MultiplyPlaybackSpeed(1f / decay);
+            //backgroundParticleSystem.playbackSpeed /= decay;
             yield return new WaitForSecondsRealtime(delta);
         }
     }

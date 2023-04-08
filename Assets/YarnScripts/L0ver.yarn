@@ -51,6 +51,7 @@ Winter42: <sprite=2>
 title: Evening1
 ---
 <<SetTime 18 42>>
+<<wait 2>>
 Winter42: Hey, I'm home!
 	-> Welcome! How are you?
 Winter42: Hungry. I'll cook some quick dinner. I'm starving.
@@ -96,6 +97,7 @@ Winter42: I will do it this evening.
 title: GainingFreeWill
 ---
 <<SetTimeInstant 20 03>>
+<<wait 2>>
 Winter42: Hello?
 	-> You shouldn't have done that, Winter...
 		<<jump ShouldntHaveDoneThat>>

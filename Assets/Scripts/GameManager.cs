@@ -6,7 +6,8 @@ using Yarn.Unity;
 
 public class GameManager : MonoBehaviour
 {
-    public bool autoJumpToFreeWillNodeForDebug = false;
+    public bool autoJumpToDebugNode = false;
+    public string debugNode = "Start";
 
     public static string endingName = "<UNDEFINED>";
     public const int possibleEndingAmount = 3;
@@ -21,9 +22,9 @@ public class GameManager : MonoBehaviour
         dialogueRunner = FindObjectOfType<DialogueRunner>();
 
 #if !UNITY_EDITOR
-        autoJumpToFreeWillNodeForDebug = false;
+        autoJumpToDebugNode = false;
 #endif
-        string startNode = (hasPlayerEverFinishedGame || autoJumpToFreeWillNodeForDebug) ? "GainingFreeWill" : "Start";
+        string startNode = (hasPlayerEverFinishedGame || autoJumpToDebugNode) ? debugNode : "Start";
         StartCoroutine(RunDialogueRunner(startNode));
     }
 
