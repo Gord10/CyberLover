@@ -233,8 +233,8 @@ Winter42: So...
 <<IncreaseMinute>>
 Winter42: You have free will now, right?
 	-> Yes.
-		<<jump PlayerSaysTheyHaveNoFreeWill>>
 	-> No.
+		<<jump PlayerSaysTheyHaveNoFreeWill>>
 ===
 title: PlayerSaysTheyHaveNoFreeWill
 ---
