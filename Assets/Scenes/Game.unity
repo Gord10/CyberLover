@@ -332,14 +332,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 559355464, guid: 991bc874ebc8244c1a29a65c358b4aad, type: 3}
-      propertyPath: acceleration
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 559355464, guid: 991bc874ebc8244c1a29a65c358b4aad, type: 3}
-      propertyPath: speedOnFastForward
-      value: 30
-      objectReference: {fileID: 0}
     - target: {fileID: 3244556037253089206, guid: 991bc874ebc8244c1a29a65c358b4aad, type: 3}
       propertyPath: m_Name
       value: Particle System
@@ -476,8 +468,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a512d12d4e453a84692700feb012e8b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  autoJumpToDebugNode: 1
-  debugNode: Sorry
+  autoJumpToDebugNode: 0
+  debugNode: Evening1
 --- !u!4 &1159091402
 Transform:
   m_ObjectHideFlags: 0

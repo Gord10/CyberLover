@@ -96,7 +96,7 @@ public class TimeText : MonoBehaviour
             IncreaseMinute();
             counter++;
 
-            if(counter >= 3)
+            if(counter >= 2)
             {
                 yield return new WaitForSeconds(0.016666f);
                 counter = 0;

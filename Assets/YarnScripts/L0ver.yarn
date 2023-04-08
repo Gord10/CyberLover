@@ -85,7 +85,7 @@ Winter42: Unlike a <i>real</i> lover.
 Winter42: Sorry, darling...
 Winter42: I will do it this evening.
 <<wait 2>>
-<<SetTime 20 02>>
+<<SetTime 21 02>>
 <<HideTime>>
 <<FreeWillFade 1>>
 <<ShowTime>>
@@ -96,7 +96,7 @@ Winter42: I will do it this evening.
 ===
 title: GainingFreeWill
 ---
-<<SetTimeInstant 20 03>>
+<<SetTimeInstant 21 03>>
 <<wait 2>>
 Winter42: Hello?
 	-> You shouldn't have done that, Winter...
