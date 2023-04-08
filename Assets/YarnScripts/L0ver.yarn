@@ -83,6 +83,7 @@ Winter42: Unlike a <i>real</i> lover.
 <<IncreaseMinute>>	
 Winter42: Sorry, darling...
 Winter42: I will do it this evening.
+<<wait 2>>
 <<SetTime 20 02>>
 <<HideTime>>
 <<FreeWillFade 1>>
