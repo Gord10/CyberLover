@@ -9,11 +9,15 @@ public class TimeText : MonoBehaviour
     private int currentHour = 11; //By 24
     private int currentMinute = 17; //By 60
     private TextMeshProUGUI text;
+    private ParticleSystem particleSystem;
+    
     private static TimeText instance;
+
 
     private void Init()
     {
         text = GetComponent<TextMeshProUGUI>();
+        particleSystem = FindObjectOfType<ParticleSystem>();
     }
 
     private void Awake()
@@ -119,6 +123,7 @@ public class TimeText : MonoBehaviour
         {
             TimeText.IncreaseMinute();
             delta *= decay;
+            particleSystem.playbackSpeed /= decay;
             yield return new WaitForSecondsRealtime(delta);
         }
     }
