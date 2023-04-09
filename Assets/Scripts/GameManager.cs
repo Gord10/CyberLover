@@ -10,7 +10,7 @@ public class GameManager : MonoBehaviour
     public string debugNode = "Start";
 
     public static string endingName = "<UNDEFINED>";
-    public const int possibleEndingAmount = 3;
+    public const int possibleEndingAmount = 4;
     
     private const string reachedEndingsPlayerPrefsKey = "reachedEndings";
 

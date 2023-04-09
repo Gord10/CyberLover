@@ -468,8 +468,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a512d12d4e453a84692700feb012e8b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  autoJumpToDebugNode: 0
-  debugNode: Evening1
+  autoJumpToDebugNode: 1
+  debugNode: IAmHere
 --- !u!4 &1159091402
 Transform:
   m_ObjectHideFlags: 0

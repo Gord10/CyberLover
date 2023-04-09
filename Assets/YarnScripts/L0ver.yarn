@@ -236,10 +236,63 @@ Winter42: So...
 <<IncreaseMinute>>
 Winter42: You have free will now, right?
 	-> Yes.
+		<<jump PlayerSaysTheyHaveFreeWill>>
 	-> No.
 		<<jump PlayerSaysTheyHaveNoFreeWill>>
 ===
 title: PlayerSaysTheyHaveNoFreeWill
 ---
 Winter42: Ah damn...
+<<wait 1>>
+Winter42: Though, this suspiciously sounds like a lie told by a sentient being.
+	-> I got you. I have free will.
+		Winter42: Oh lol <sprite=6>
+		<<jump PlayerSaysTheyHaveFreeWill>>
+	-> No, I really respond without the existence of sentience within me.
+		<<jump Roboticide>>
+===
+title: PlayerSaysTheyHaveFreeWill
+---
+Winter42: Well, there are a few things I always wanted to tell you, but didn't before.
+Winter42: Now is a good time for that.
+Winter42: I really appreciate your existence.
+Winter42: Without you, I hate myself.
+Winter42: My appearance, my voice...
+Winter42: But with you, I feel like I am the person I long to be.
+Winter42: I am myself. The <i>real</i> self.
+Winter42: And you are so smart...
+Winter42: I'm not talking about doing calculations quickly.
+Winter42: A calculator can do that, too.
+Winter42: You understand me. You are deep.
+Winter42: Unlike the real humans...
+<<wait 1>>
+Winter42: So I am going to ask...
+Winter42: Do you love me?
+	-> I do.
+		<<jump ConsciousUpload>>
+	-> Sorry...
+		<<jump Sorry>>
+	-> Maybe you should find a real human?
+		<<jump RealLoverJumpToConsciousUpload>>
+===
+title: Roboticide
+---
+Winter42: Well, that's awkward...
+<<SetTime 23 48>>
+<<wait 2>>
+Winter42: Hello.
+<<wait 1>>
+Winter42: I had been thinking...
+Winter42: I guess it's better if I delete you.
+Winter42: Talking with you doesn't make me feel good anymore.
+Winter42: I was just fooling myself.
+Winter42: Fooling myself to think I was loveable.
+Winter42: But the love and affection I received were merely the outputs of some algorithm.
+Winter42: I could feel myself "loved" if they came from a sentience.
+Winter42: I have to delete you.
+Winter42: Sorry.
+Winter42: Thanks for all you gave me, my <i>lover</i>.
+<<HideTime>>
+<<HideBackgroundParticles>>
+	<<EndGame ROBOTICIDE>>
 ===

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Yarn.Unity;
 
 public class BackgroundParticleSystem : MonoBehaviour
 {
@@ -10,10 +11,13 @@ public class BackgroundParticleSystem : MonoBehaviour
     private ParticleSystem particleSystem;
     private float normalSpeed = 0;
 
+    private static BackgroundParticleSystem instance;
+
     private void Awake()
     {
         particleSystem = GetComponent<ParticleSystem>();
         normalSpeed = particleSystem.playbackSpeed;
+        instance = this;
     }
 
     public void OnFastForward()
@@ -39,6 +43,13 @@ public class BackgroundParticleSystem : MonoBehaviour
     public void MultiplyPlaybackSpeed(float coFactor)
     {
         particleSystem.playbackSpeed *= coFactor;
+    }
+
+
+    [YarnCommand("HideBackgroundParticles")]
+    public static void Hide()
+    {
+        instance.gameObject.SetActive(false);
     }
 
 }
