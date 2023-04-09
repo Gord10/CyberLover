@@ -128,7 +128,7 @@ public class TimeText : MonoBehaviour
         backgroundParticleSystem.MultiplyPlaybackSpeed(6);
 
         float delta = 0.3f;
-        float decay = 0.95f;
+        float decay = 0.96f;
 
         while (true)
         {

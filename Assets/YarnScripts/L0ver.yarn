@@ -33,6 +33,7 @@ Winter42: <i>*kisses*</i>
 title: Morning1
 ---
 <<SetTime 7 13>>
+<<wait 2>>
 Winter42: Good morning!
 Winter42: It's 07:13 AM now. You know it, though, lol <sprite=1>
 	-> Good morning. How are you doing?
@@ -189,7 +190,7 @@ title: DontDoEden
 ---
 Winter42: Why?
 Winter42: Don't you want me?
-	-> Find a real lover. A human like you, made of flesh and bones. Not ones and zeros.
+	-> Find a lover like you, made of flesh and bones. Not zeros and ones.
 		<<jump RealLoverDestructionOrEden>>
 	-> Sorry...
 		<<jump Sorry>>

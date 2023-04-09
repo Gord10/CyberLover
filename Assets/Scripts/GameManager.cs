@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
 {
     public bool autoJumpToDebugNode = false;
     public string debugNode = "Start";
+    public string nodeToRunAfterRestart = "GainingFreeWill";
 
     public static string endingName = "<UNDEFINED>";
     public const int possibleEndingAmount = 4;
@@ -24,7 +25,22 @@ public class GameManager : MonoBehaviour
 #if !UNITY_EDITOR
         autoJumpToDebugNode = false;
 #endif
-        string startNode = (hasPlayerEverFinishedGame || autoJumpToDebugNode) ? debugNode : "Start";
+
+        string startNode = "";
+
+        if(hasPlayerEverFinishedGame)
+        {
+            startNode = nodeToRunAfterRestart;
+        }
+        else if(autoJumpToDebugNode)
+        {
+            startNode = debugNode;
+        }
+        else
+        {
+            startNode = "Start";
+        }
+
         StartCoroutine(RunDialogueRunner(startNode));
     }
 
@@ -32,7 +48,6 @@ public class GameManager : MonoBehaviour
     {
         while(!dialogueRunner.NodeExists(startNode))
         {
-            print("dsds");
             yield return new WaitForEndOfFrame();
         }
 

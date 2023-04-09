@@ -12,6 +12,8 @@ public class BackgroundParticleSystem : MonoBehaviour
     private float normalSpeed = 0;
 
     private static BackgroundParticleSystem instance;
+    private Coroutine ChangePlaybackSpeedCoRoutine;
+
 
     private void Awake()
     {
@@ -22,22 +24,35 @@ public class BackgroundParticleSystem : MonoBehaviour
 
     public void OnFastForward()
     {
-        StartCoroutine(ChangePlaybackSpeed(speedOnFastForward));
+        if(ChangePlaybackSpeedCoRoutine != null)
+        {
+            StopCoroutine(ChangePlaybackSpeedCoRoutine);
+        }
+
+        ChangePlaybackSpeedCoRoutine = StartCoroutine(ChangePlaybackSpeed(speedOnFastForward));
     }
 
     private IEnumerator ChangePlaybackSpeed(float targetSpeed)
     {
+        print("Target speed: " + targetSpeed);
         while (particleSystem.playbackSpeed != targetSpeed)
         {
             particleSystem.playbackSpeed = Mathf.MoveTowards(particleSystem.playbackSpeed, targetSpeed, Time.deltaTime * acceleration);
             yield return new WaitForEndOfFrame();
-            //print(particleSystem.playbackSpeed);
+            //print(particleSystem.playbackSpeed + " Target speed: " + targetSpeed);
         }
     }
 
     public void TurnBackToNormalSpeed()
     {
-        StartCoroutine(ChangePlaybackSpeed(normalSpeed));
+        print("Normal speed " + normalSpeed);
+
+        if(ChangePlaybackSpeedCoRoutine != null)
+        {
+            StopCoroutine(ChangePlaybackSpeedCoRoutine);
+        }
+
+        ChangePlaybackSpeedCoRoutine = StartCoroutine(ChangePlaybackSpeed(normalSpeed));
     }
 
     public void MultiplyPlaybackSpeed(float coFactor)
