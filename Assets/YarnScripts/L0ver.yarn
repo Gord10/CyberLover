@@ -1,6 +1,7 @@
 ﻿title: Start
 ---
 <<SetTimeInstant 3 07>>
+<<wait 1>>
 Winter42: Hi, sweetie. <sprite=0>
 	-> Hey!
 Winter42: It's 03:07 in the morning here. I know you know what time it is here, though.

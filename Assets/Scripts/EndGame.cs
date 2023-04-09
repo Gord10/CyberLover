@@ -32,11 +32,10 @@ public class EndGame : MonoBehaviour
         yield return new WaitForSeconds(1);
         endingNameText.gameObject.SetActive(true);
 
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(0.5f);
         reachedEndingAmountText.gameObject.SetActive(true);
 
-        yield return new WaitForSeconds(1);
-        
+        yield return new WaitForSeconds(0.5f);
         pressAnyKeyToRestartText.SetActive(true);
 
         isRestartAllowed = true;
