@@ -176,7 +176,7 @@ MonoBehaviour:
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 0.503
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -468,8 +468,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a512d12d4e453a84692700feb012e8b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  autoJumpToDebugNode: 0
-  debugNode: IAmHere
+  autoJumpToDebugNode: 1
+  debugNode: GainingFreeWill
   nodeToRunAfterRestart: GainingFreeWill
 --- !u!4 &1159091402
 Transform:
@@ -564,11 +564,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2233730802418925668, guid: 57e17f7e5a36a714999d4f06ef7c3faa, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -144.5
+      value: -139.88
       objectReference: {fileID: 0}
     - target: {fileID: 2233730802418925668, guid: 57e17f7e5a36a714999d4f06ef7c3faa, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -41
+      value: -86.2
       objectReference: {fileID: 0}
     - target: {fileID: 2233730802418925668, guid: 57e17f7e5a36a714999d4f06ef7c3faa, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
