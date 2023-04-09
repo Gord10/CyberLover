@@ -80,5 +80,13 @@ MonoBehaviour:
       m_Groups: 
       m_Action: Skip
       m_Flags: 0
+    - m_Name: 
+      m_Id: 4d95111d-fabb-480f-846a-f440a71f34a7
+      m_Path: <Keyboard>/anyKey
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Skip
+      m_Flags: 0
     m_Flags: 0
   enableActionOnStart: 1

@@ -747,6 +747,10 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8147588810477638474, guid: 5fcaf5145a9797946b2af2a440ca0a0f, type: 3}
+      propertyPath: verboseLogging
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5fcaf5145a9797946b2af2a440ca0a0f, type: 3}
 --- !u!1001 &7282597879416072111
