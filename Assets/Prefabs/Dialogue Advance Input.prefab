@@ -88,5 +88,13 @@ MonoBehaviour:
       m_Groups: 
       m_Action: Skip
       m_Flags: 0
+    - m_Name: 
+      m_Id: 985af4b8-5a50-4e84-8152-b5ea03bea022
+      m_Path: <Gamepad>/buttonSouth
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Skip
+      m_Flags: 0
     m_Flags: 0
   enableActionOnStart: 1

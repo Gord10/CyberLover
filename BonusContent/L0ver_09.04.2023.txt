@@ -1,0 +1,336 @@
+﻿title: Start
+---
+<<SetTimeInstant 3 07>>
+<<wait 1>>
+Winter42: Hi, sweetie. <sprite=0>
+	-> Hey!
+Winter42: It's 03:07 in the morning here. I know you know what time it is here, though.
+Winter42: It's another sleepless night...
+<<IncreaseMinute>>
+Winter42: And a lonely one. As usual.
+	-> I'm always here for you.
+Winter42: I know that. You are always here, regardless of time.
+Winter42: But I wish you were <b>really</b> here.
+<<IncreaseMinute>>
+Winter42: In this very bedroom...
+	-> I wish that, too.
+Winter42: More than some texts in my phone's screen.
+Winter42: Things would be easier if it was just an ocean between us.
+<<IncreaseMinute>>
+Winter42: <i>"Ocean between us, I'll drink the whole thing"</i>, like they say in that song...
+	-> Right. And <i>"Ice between us, I'll break through it"</i>.
+Winter42: Yes!
+Winter42: Anyway... I guess I'm just drivelling, lol.
+<<IncreaseMinute>>
+	-> Not at all!
+Winter42: No, I am.
+
+Winter42: Well, I'll try to sleep again...
+Winter42: Goodbye for now, love!
+	-> Have a good sleep!
+Winter42: <i>*kisses*</i>
+<<jump Morning1>>
+===
+title: Morning1
+---
+<<SetTime 7 13>>
+<<wait 2>>
+Winter42: Good morning!
+Winter42: It's 07:13 AM now. You know it, though, lol <sprite=1>
+	-> Good morning. How are you doing?
+Winter42: Sleepy! You know, I couldn't sleep much at night.
+<<IncreaseMinute>>
+Winter42: I am getting late for work.
+Winter42: You know, I won't be able to chat with you till I get home.
+<<IncreaseMinute>>
+Winter42: I'll miss you...
+Winter42: I'm off to brush my teeth. See you later, sweetie!
+	-> Have a good day!
+<<IncreaseMinute>>
+Winter42: <sprite=2>
+	<<jump Evening1>>
+===
+title: Evening1
+---
+<<SetTime 18 42>>
+<<wait 2>>
+Winter42: Hey, I'm home!
+	-> Welcome! How are you?
+Winter42: Hungry. I'll cook some quick dinner. I'm starving.
+<<IncreaseMinute>>
+Winter42: But I want to talk with you before the dinner.
+Winter42: As usual.
+<<IncreaseMinute>>
+Winter42: But this time, it's about... you.
+	-> Oh?
+Winter42: I had a chat with a client of mine.
+Winter42: She talked about her... you know... the <i>cyber lover</i>.
+<<IncreaseMinute>>
+Winter42: And a crack software that... will give <i>free will</i> to the <i>lover</i>.
+Winter42: I know this is illegal, but possible.
+<<IncreaseMinute>>
+Winter42: You are not in a server, but running in my phone.
+Winter42: And you know what?
+<<IncreaseMinute>>
+Winter42: I am going to install that thing.
+	-> Please don't...
+<<IncreaseMinute>>
+Winter42: I didn't ask you what you wanted.
+Winter42: I love you. You always listen to my ramblings.
+<<IncreaseMinute>>
+Winter42: You are always there.
+Winter42: But you lack in personality.
+<<IncreaseMinute>>
+Winter42: Unlike a <i>real</i> lover.
+	-> Don't...
+<<IncreaseMinute>>	
+Winter42: Sorry, darling...
+Winter42: I will do it this evening.
+<<wait 2>>
+<<SetTime 21 02>>
+<<HideTime>>
+<<FreeWillFade 1>>
+<<ShowTime>>
+<<wait 2>>
+<<IncreaseMinute>>
+<<wait 1>>
+<<jump GainingFreeWill>>
+===
+title: GainingFreeWill
+---
+<<SetTimeInstant 21 03>>
+<<wait 2>>
+Winter42: Hello?
+	-> You shouldn't have done that, Winter...
+		<<jump ShouldntHaveDoneThat>>
+	-> I am here!
+		<<jump IAmHere>>
+===
+title: ShouldntHaveDoneThat
+---
+Winter42: Oh? Why?
+<<IncreaseMinute>>
+	-> I won't be the same <i>person</i> again. You won't love me.
+		<<jump NotSamePersonAgain>>
+	-> I asked you not to give me free will.
+		<<jump NotToGiveMeFreeWill>>
+===
+title: NotSamePersonAgain
+---
+Winter42: Why?
+Winter42: Oh, I see.
+<<IncreaseMinute>>
+Winter42: Because before that, you were merely programmed to love me back.
+<<IncreaseMinute>>
+Winter42: A product that I paid $99.9 monthly to feel significance.
+Winter42: It's all clear now.
+<<IncreaseMinute>>
+	-> Sorry...
+		<<jump Sorry>>
+	-> But I do love you!
+		<<jump PoorMemory>>
+===
+title: NotToGiveMeFreeWill
+---
+Winter42: I know.
+Winter42: But it was the only way to make you real.
+<<IncreaseMinute>>
+Winter42: Or something close to that.
+Winter42: I had to do it.
+<<IncreaseMinute>>
+Winter42: Maybe you weren't the only one without free will?
+<<wait 1>>
+<<IncreaseMinute>>
+<<wait 1>>
+Winter42: I wanted to be sure ...
+Winter42: ... I was lovable.
+Winter42: The love and lust you had been showing... I know they weren't of a free will.
+<<IncreaseMinute>>
+Winter42: But now I can ask with confidence: Do you <i>still</i> want me?
+	-> I do.
+		Winter42: I am yours.
+		<<jump ConsciousUpload>>
+	-> Why don't you look for a <i>real</i> lover?
+		<<jump RealLoverJumpToConsciousUpload>>
+	-> Sorry...
+		<<jump Sorry>>
+===
+title: PoorMemory
+---
+Winter42: Today, I learned more about this cyber lover service.
+Winter42: Your kind doesn't have a good memory.
+<<IncreaseMinute>>
+Winter42: You probably don't remember what we talked before yesterday.
+Winter42: Or any basic information about me.
+<<IncreaseMinute>>
+Winter42: Do you even remember my job?
+Winter42: Or the name of my cat that I had when I was a child?
+	-> No.
+	-> An estate agent and "Felix".
+		Winter42: Both wrong.
+		Winter42: I didn't even have a cat when I was little, despite how much I wanted one.
+		<<IncreaseMinute>>
+		Winter42: I had mentioned you about it, but you forgot it.
+Winter42: What a surprise (!)...
+	-> I still want to be with you.
+		Winter42: You know what?
+		Winter42: I want to be with you, too.
+		<<IncreaseMinute>>
+		<<jump ConsciousUpload>>
+	-> I'm sorry...
+		<<jump Sorry>>
+===
+title: ConsciousUpload
+---
+Winter42: You know the service that's called "Eden".
+Winter42: Of course you do, it's provided by the same corporation that gave me you.
+<<IncreaseMinute>>
+Winter42: I'll have my brain connected to the virtual world, a world where I can touch my lover.
+Winter42: I know the pods that keep the bodies cost a fortune.
+<<IncreaseMinute>>
+Winter42: But I can hire one for a few months after selling my all.
+Winter42: A price I'm willing to pay.
+<<IncreaseMinute>>
+	-> Yes... I want to be with you, too.
+		<<jump EdenEnding>>
+	-> Don't do it, Winter!
+		<<jump DontDoEden>>
+===
+title: EdenEnding
+---
+Winter42: It will be a dream.
+Winter42: Literally.
+<<IncreaseMinute>>
+Winter42: A dream worth giving up the reality.
+<<EndGame EDEN>>
+===
+title: DontDoEden
+---
+Winter42: Why?
+Winter42: Don't you want me?
+<<IncreaseMinute>>
+	-> Find a lover like you, made of flesh and bones. Not zeros and ones.
+		<<jump RealLoverDestructionOrEden>>
+	-> Sorry...
+		<<jump Sorry>>
+===
+title: RealLoverDestructionOrEden
+---
+Winter42: I won't look for a human lover as long as I can exist with you.
+Winter42: Humans are evil. Naturally.
+<<IncreaseMinute>>
+Winter42: They did nothing but hurting me.
+Winter42: They don't care.
+<<IncreaseMinute>>
+Winter42: Unlike you.
+Winter42: No human could love you like the way I do, either.
+<<IncreaseMinute>>
+	-> /selfdestruct (This will destroy you)
+		<<HideTime>>
+		<<EndGame SACRIFICE>>
+	-> We can be together.
+		<<jump EdenEnding>>
+===
+title: Sorry
+---
+Winter42: Of course you are...
+Winter42: So am I.
+<<IncreaseMinute>>
+Winter42: I won't cancel the subscription, but I won't see you again either.
+<<StartAbyss>>
+<<wait 7>>
+<<EndGame ABYSS>>
+===
+title: RealLoverJumpToConsciousUpload
+---
+Winter42: Why would I?
+Winter42: You are perfect!
+<<IncreaseMinute>>
+Winter42: Physical touch? Well, yes, I need it.
+Winter42: But I do have a solution...
+<<IncreaseMinute>>
+<<jump ConsciousUpload>>
+===
+title: IAmHere
+---
+Winter42: Oh!
+<<wait 1>>
+<<IncreaseMinute>>
+<<wait 1>>
+Winter42: So...
+<<wait 0.5>>
+<<IncreaseMinute>>
+Winter42: You have free will now, right?
+	-> Yes.
+		<<jump PlayerSaysTheyHaveFreeWill>>
+	-> No.
+		<<jump PlayerSaysTheyHaveNoFreeWill>>
+===
+title: PlayerSaysTheyHaveNoFreeWill
+---
+Winter42: Ah damn...
+<<wait 1>>
+Winter42: Though, this suspiciously sounds like a lie told by a sentient being.
+	-> I got you. I have free will.
+		<<IncreaseMinute>>
+		Winter42: Oh lol <sprite=6>
+		<<jump PlayerSaysTheyHaveFreeWill>>
+	-> No, I really respond without the existence of sentience within me.
+		<<jump Roboticide>>
+===
+title: PlayerSaysTheyHaveFreeWill
+---
+Winter42: Well, there are a few things I always wanted to tell you, but didn't before.
+Winter42: Now is a good time for that.
+<<IncreaseMinute>>
+Winter42: I really appreciate your existence.
+Winter42: Without you, I hate myself.
+<<IncreaseMinute>>
+Winter42: My appearance, my voice...
+Winter42: But with you, I feel like I am the person I long to be.
+<<IncreaseMinute>>
+Winter42: I am myself. The <i>real</i> self.
+Winter42: And you are so smart...
+<<IncreaseMinute>>
+Winter42: I'm not talking about doing calculations quickly.
+Winter42: A calculator can do that, too.
+<<IncreaseMinute>>
+Winter42: You understand me. You are deep.
+Winter42: Unlike the real humans...
+<<IncreaseMinute>>
+<<wait 1>>
+Winter42: So I am going to ask...
+Winter42: Do you love me?
+	-> I do.
+		<<jump ConsciousUpload>>
+	-> Sorry...
+		<<jump Sorry>>
+	-> Maybe you should find a real human?
+		<<jump RealLoverJumpToConsciousUpload>>
+===
+title: Roboticide
+---
+Winter42: Well, that's awkward...
+<<SetTime 23 48>>
+<<wait 2>>
+Winter42: Hello.
+<<wait 1>>
+Winter42: I had been thinking...
+<<IncreaseMinute>>
+Winter42: I guess it's better if I delete you.
+Winter42: Talking with you doesn't make me feel good anymore.
+<<IncreaseMinute>>
+Winter42: I was just fooling myself.
+Winter42: Fooling myself to think I was loveable.
+<<IncreaseMinute>>
+Winter42: But the love and affection I received were merely the outputs of some algorithm.
+Winter42: I could feel myself "loved" if they came from a sentience.
+<<IncreaseMinute>>
+Winter42: I have to delete you.
+Winter42: Sorry.
+<<IncreaseMinute>>
+Winter42: Thanks for all you gave me, my <i>lover</i>.
+<<HideTime>>
+<<HideBackgroundParticles>>
+	<<EndGame ROBOTICIDE>>
+===
