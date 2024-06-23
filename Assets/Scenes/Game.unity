@@ -241,10 +241,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 792946725251370803, guid: 6e4abc3d518832047b98b1692784f16c, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 792946725251370803, guid: 6e4abc3d518832047b98b1692784f16c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -282,10 +278,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 792946725251370803, guid: 6e4abc3d518832047b98b1692784f16c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 792946725251370803, guid: 6e4abc3d518832047b98b1692784f16c, type: 3}
-      propertyPath: m_ConstrainProportionsScale
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2854361989536505786, guid: 6e4abc3d518832047b98b1692784f16c, type: 3}
@@ -536,7 +528,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a512d12d4e453a84692700feb012e8b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  autoJumpToDebugNode: 0
+  autoJumpToDebugNode: 1
   debugNode: GainingFreeWill
   nodeToRunAfterRestart: GainingFreeWill
 --- !u!4 &1159091402
@@ -724,6 +716,22 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3120260274900669646, guid: 5fcaf5145a9797946b2af2a440ca0a0f, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0.8050314
+      objectReference: {fileID: 0}
+    - target: {fileID: 3120260274900669646, guid: 5fcaf5145a9797946b2af2a440ca0a0f, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0.8050314
+      objectReference: {fileID: 0}
+    - target: {fileID: 3120260274900669646, guid: 5fcaf5145a9797946b2af2a440ca0a0f, type: 3}
+      propertyPath: m_fontColor.r
+      value: 0.8050314
+      objectReference: {fileID: 0}
+    - target: {fileID: 3120260274900669646, guid: 5fcaf5145a9797946b2af2a440ca0a0f, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4291677645
+      objectReference: {fileID: 0}
     - target: {fileID: 3120260275310438171, guid: 5fcaf5145a9797946b2af2a440ca0a0f, type: 3}
       propertyPath: m_SizeDelta.y
       value: 0
@@ -731,6 +739,22 @@ PrefabInstance:
     - target: {fileID: 3120260275310438171, guid: 5fcaf5145a9797946b2af2a440ca0a0f, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3120260276225494176, guid: 5fcaf5145a9797946b2af2a440ca0a0f, type: 3}
+      propertyPath: m_fontColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3120260276225494176, guid: 5fcaf5145a9797946b2af2a440ca0a0f, type: 3}
+      propertyPath: m_fontColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3120260276225494176, guid: 5fcaf5145a9797946b2af2a440ca0a0f, type: 3}
+      propertyPath: m_fontColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3120260276225494176, guid: 5fcaf5145a9797946b2af2a440ca0a0f, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 3120260276225494191, guid: 5fcaf5145a9797946b2af2a440ca0a0f, type: 3}
       propertyPath: m_AnchorMax.y
@@ -760,17 +784,9 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3120260276302205436, guid: 5fcaf5145a9797946b2af2a440ca0a0f, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7388351372712336183, guid: 5fcaf5145a9797946b2af2a440ca0a0f, type: 3}
       propertyPath: m_Name
       value: Dialogue System
-      objectReference: {fileID: 0}
-    - target: {fileID: 7823497962426526025, guid: 5fcaf5145a9797946b2af2a440ca0a0f, type: 3}
-      propertyPath: m_RootOrder
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7823497962426526025, guid: 5fcaf5145a9797946b2af2a440ca0a0f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -862,10 +878,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 7282597878667046607, guid: 4a22ff4b4bff2934585d89eb52e410d6, type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7282597878667046607, guid: 4a22ff4b4bff2934585d89eb52e410d6, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.2433646
       objectReference: {fileID: 0}
@@ -909,6 +921,10 @@ PrefabInstance:
       propertyPath: dialogueView
       value: 
       objectReference: {fileID: 162394019}
+    - target: {fileID: 7282597878667046640, guid: 4a22ff4b4bff2934585d89eb52e410d6, type: 3}
+      propertyPath: continueActionType
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 7282597878667046641, guid: 4a22ff4b4bff2934585d89eb52e410d6, type: 3}
       propertyPath: m_Name
       value: Dialogue Advance Input

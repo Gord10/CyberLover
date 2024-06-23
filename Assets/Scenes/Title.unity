@@ -393,10 +393,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 7282597878667046607, guid: 4a22ff4b4bff2934585d89eb52e410d6, type: 3}
-      propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 7282597878667046607, guid: 4a22ff4b4bff2934585d89eb52e410d6, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.2433646
       objectReference: {fileID: 0}
@@ -440,6 +436,10 @@ PrefabInstance:
       propertyPath: dialogueView
       value: 
       objectReference: {fileID: 755669090}
+    - target: {fileID: 7282597878667046640, guid: 4a22ff4b4bff2934585d89eb52e410d6, type: 3}
+      propertyPath: continueActionType
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 7282597878667046641, guid: 4a22ff4b4bff2934585d89eb52e410d6, type: 3}
       propertyPath: m_Name
       value: Dialogue Advance Input
@@ -582,10 +582,6 @@ PrefabInstance:
       value: Dialogue System
       objectReference: {fileID: 0}
     - target: {fileID: 7823497962426526025, guid: 5fcaf5145a9797946b2af2a440ca0a0f, type: 3}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 7823497962426526025, guid: 5fcaf5145a9797946b2af2a440ca0a0f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -653,11 +649,30 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8147588810477638474, guid: 5fcaf5145a9797946b2af2a440ca0a0f, type: 3}
+      propertyPath: lineProvider
+      value: 
+      objectReference: {fileID: 1677545071}
+    - target: {fileID: 8147588810477638474, guid: 5fcaf5145a9797946b2af2a440ca0a0f, type: 3}
+      propertyPath: startAutomatically
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5fcaf5145a9797946b2af2a440ca0a0f, type: 3}
+--- !u!114 &1677545071 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7137488519882330862, guid: 5fcaf5145a9797946b2af2a440ca0a0f, type: 3}
+  m_PrefabInstance: {fileID: 1677545070}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10f0777399ec04ef6957da2ae823eb8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2045220544
 GameObject:
   m_ObjectHideFlags: 0

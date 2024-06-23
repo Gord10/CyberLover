@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -35,7 +36,7 @@ public class BackgroundParticleSystem : MonoBehaviour
     private IEnumerator ChangePlaybackSpeed(float targetSpeed)
     {
         print("Target speed: " + targetSpeed);
-        while (particleSystem.playbackSpeed != targetSpeed)
+        while (particleSystem && particleSystem.playbackSpeed != targetSpeed)
         {
             particleSystem.playbackSpeed = Mathf.MoveTowards(particleSystem.playbackSpeed, targetSpeed, Time.deltaTime * acceleration);
             yield return new WaitForEndOfFrame();
@@ -58,6 +59,14 @@ public class BackgroundParticleSystem : MonoBehaviour
     public void MultiplyPlaybackSpeed(float coFactor)
     {
         particleSystem.playbackSpeed *= coFactor;
+    }
+
+    private void OnDestroy()
+    {
+        if(ChangePlaybackSpeedCoRoutine != null)
+        {
+            StopCoroutine(ChangePlaybackSpeedCoRoutine);
+        }
     }
 
 
